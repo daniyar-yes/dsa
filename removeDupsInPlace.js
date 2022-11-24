@@ -1,4 +1,4 @@
-const removeDuplicates(nums) {
+const removeDuplicates = function(nums) {
         
     // The initial length is simply the capacity.
     const length = nums.length;
