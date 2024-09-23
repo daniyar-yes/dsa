@@ -10,17 +10,17 @@ function compress(chars: string[]): number {
     }
 
     for (let i=0; i<chars.length; i++) {
-        if (results.includes(chars[i])) continue;
 
         current = chars[i];
         counter++;
 
         for (let j=i+1; j<chars.length; j++) {
-            if (chars[j] !== current) continue;
 
-            else {
-                counter++;
-            }
+           if (chars[j] === current) {
+            counter++;
+        } else {
+            break;
+        }
         }
 
         results.push(current);
@@ -29,7 +29,9 @@ function compress(chars: string[]): number {
             results = results.concat(stringsArr);
 
         };
+        i += (counter - 1); // important to jump to the next group
         counter = 0;
+
     }
 
     chars.length = 0;
