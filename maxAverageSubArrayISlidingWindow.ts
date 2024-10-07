@@ -1,10 +1,6 @@
 function findMaxAverage(nums: number[], k: number): number {
 
     if (nums.length == 1) return nums[0];
-    if (nums.length == k) {
-        let normalAverage = nums.reduce((a,b) => a+b, 0,) / k;
-        return normalAverage;
-    }
     
     let maxSum: number = 0;
     let tempSum: number = 0;
