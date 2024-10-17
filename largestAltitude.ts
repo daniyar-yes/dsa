@@ -5,8 +5,7 @@ function largestAltitude(gain: number[]): number {
 
     for (let i=0; i<gain.length; i++) {
         accumulator += gain[i];
-        altitudes.push(accumulator)
-        maxAlt = Math.max(maxAlt, altitudes[i+1])
+        maxAlt = Math.max(maxAlt, accumulator)
     }
 
 
