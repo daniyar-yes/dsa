@@ -1,5 +1,4 @@
 function largestAltitude(gain: number[]): number {
-    let altitudes: number[] = [0];
     let accumulator: number = 0;
     let maxAlt: number = 0;
 
