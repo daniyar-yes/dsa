@@ -1,5 +1,4 @@
 var longestOnes = function(nums, k) {
-    let result = 0;
     let left = 0;
     let right = 0;
 
